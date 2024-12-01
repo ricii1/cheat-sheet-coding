@@ -1,6 +1,6 @@
 # Cheat Sheet Laravel
 ## Instalasi Laravel
-
+Coming Soon
 ## Memulai Suatu Project
 - Membuat project dengan dependensi global
   ```
@@ -52,8 +52,27 @@ php artisan make:model <nama_model>
   ```
   php artisan migrate:status
   ```
-- 
+- Membuat migrasi dengan nama khusus
+  ```
+  php artisan make:migration create_table_name_table
+  ```
 ## Seeding Database
+- Menjalankan Seeder default (DatabaseSeeder)
+  ```
+  php artisan db:seed
+  ```
+- Menjalankan seeder tertentu
+  ```
+  php artisan db:seed --class=<NamaSeeder>
+  ```
+- Menjalankan migrasi dan seeder bersamaan
+  ```
+  php artisan migrate --seed
+  ```
+- Membuat seeder baru
+  ```
+  php artisan make:seeder <NamaSeeder>
+  ```
 ## Optimize aplikasi
 Meningkatkan performa aplikasi dengan mengoptimalkan konfigurasi, route, dan view.
 ```
@@ -76,3 +95,20 @@ php artisan optimize
 ```
 php artisan test
 ```
+## Membuat Middleware
+```
+php artisan make:middleware <NamaMiddleware>
+```
+## Cache
+- Menghapus cache view (dari file blade)
+  ```
+  php artisan view:clear
+  ```
+- Menghapus cache aplikasi (semua data cache aplikasi)
+  ```
+  php artisan cache:clear
+  ```
+- Menghapus konfigurasi cache (menghapus cache dari folder config)
+  ```
+  php artisan config:clear
+  ```
