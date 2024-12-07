@@ -73,6 +73,15 @@ php artisan make:model <nama_model>
   ```
   php artisan make:seeder <NamaSeeder>
   ```
+## Membuat Component
+- Menambahkan component dengan class (dapat menerima inputan)
+  ```
+  php artisan make:component <NamaComponent>
+  ```
+- Menambahkan component tanpa class (hanya view)
+  ```
+  php artisan make:component <NamaComponent> --view
+  ```
 ## Optimize aplikasi
 Meningkatkan performa aplikasi dengan mengoptimalkan konfigurasi, route, dan view.
 ```
