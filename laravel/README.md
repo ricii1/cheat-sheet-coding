@@ -73,6 +73,10 @@ php artisan make:model <nama_model>
   ```
   php artisan make:seeder <NamaSeeder>
   ```
+## Membuat Factory
+```
+php artisan make:factory <NamaFactory> --model=<NamaMode>
+```
 ## Membuat Component
 - Menambahkan component dengan class (dapat menerima inputan)
   ```
