@@ -91,6 +91,10 @@ Meningkatkan performa aplikasi dengan mengoptimalkan konfigurasi, route, dan vie
 ```
 php artisan optimize
 ```
+## Menghasilkan kunci
+```
+php artisan key:generate
+```
 ## Memulai Web Server
 - Menjalankan secara default di ```http://localhost:8000```
   ```
