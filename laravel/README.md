@@ -129,3 +129,8 @@ php artisan make:middleware <NamaMiddleware>
   ```
   php artisan config:clear
   ```
+## Laravel with Livewire
+- Membuat komponen livewire
+  ```
+  php artisan make:livewire <NamaKomponen>
+  ```
