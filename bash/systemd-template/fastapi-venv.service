@@ -1,0 +1,13 @@
+[Unit]
+Description=FastAPI app (venv)
+After=network.target
+
+[Service]
+User=youruser
+Group=youruser
+WorkingDirectory=/path/to/fastapi
+ExecStart=/bin/bash -c 'source /path/to/fastapi/venv/bin/activate && exec uvicorn main:app --host 0.0.0.0 --port 8000'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

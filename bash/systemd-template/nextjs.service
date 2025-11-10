@@ -1,0 +1,13 @@
+[Unit]
+Description=Next.js App
+After=network.target
+
+[Service]
+User=youruser
+Group=youruser
+WorkingDirectory=/path/to/nextjs
+ExecStart=/usr/bin/npm run start
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

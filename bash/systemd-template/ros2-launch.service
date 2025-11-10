@@ -1,0 +1,13 @@
+[Unit]
+Description=ROS2 Launch Service
+After=network.target
+
+[Service]
+User=youruser
+Group=youruser
+WorkingDirectory=/path/to/ros2_ws
+ExecStart=/bin/bash -c 'source /opt/ros/humble/setup.bash && source install/setup.bash && ros2 launch your_package your_launch_file.launch.py'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
